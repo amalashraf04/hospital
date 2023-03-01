@@ -20,10 +20,10 @@ app.post('/hospital',(req,res)=>{
     datas.push(req.body);
     fs.writeFile('data.json',JSON.stringify(datas),(err,resp)=>{
     if(err){
-        res.send("Data cannot be written");
+        res.send("Hospital Data cannot be written");
     }
     else{
-        res.send("Data written successfully"); 
+        res.send("Hospital Data written successfully"); 
     }
     })
 }) 
@@ -41,7 +41,7 @@ app.put('/hospital/:name',(req,res)=>{
             res.send("Data could not be updated");
         }
         else{
-            res.send("Data updated");
+            res.send("Hospital Data updated");
         }
     })
 })
@@ -55,10 +55,10 @@ app.delete('/hospital/:name',(req,res) => {
             res.send("Data cannot be deleted")
         }
         else{
-          res.send("Data deleted")
+          res.send("Hospital Data deleted")
         }
     })
 })
 //creating port
 app.listen(1234);
-console.log("Server listening to port 3000");
+console.log("Server listening to port 1234");
