@@ -5,10 +5,6 @@ const fs = require('fs');
 //parsing data
 app.use(express.json());
 //app.use(express.urlencoded({extended:true}));
-//logger info
- 
-//const logger = require('morgan');
-//app.use(logger('dev'));
 
 const datas = require('./data.json');
 //get operation
